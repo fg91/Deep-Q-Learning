@@ -1,12 +1,9 @@
 set terminal png enhanced size 600,400
 set output 'epsilon.png'
 
-set lmargin at screen .1
-set rmargin at screen .9
-
 set samples 1000
 
-explorationInitial = 1.
+explorationInitial = 1
 explorationFinal = 0.1
 explorationInitialnference = 0.01
 memoryBufferStartSize = 5e4
@@ -14,7 +11,7 @@ maxFrames = 2e6
 AnnealingFrames = 1e6
 
 set xrange [0:maxFrames]
-set yrange [0:1.05]
+set yrange [0:explorationInitial + 0.05]
 
 set ylabel 'epsilon' offset screen .035
 set xlabel 'frameNumber'
@@ -29,14 +26,15 @@ set arrow 2 from memoryBufferStartSize + AnnealingFrames, graph 0 to memoryBuffe
 
 # Slopes and intercepts for epsilon-annealing
 m1=-(explorationInitial-explorationFinal)/AnnealingFrames
-b1=1-m1*memoryBufferStartSize
+b1=explorationInitial-m1*memoryBufferStartSize
 m2=-(explorationFinal-explorationInitialnference)/(maxFrames - AnnealingFrames - memoryBufferStartSize)
 b2=explorationInitialnference -m2*maxFrames
 
-plot 1 / (x<memoryBufferStartSize) w l lc 2 lw 2,\
+plot explorationInitial / (x<memoryBufferStartSize) w l lc 2 lw 2,\
      m1*x + b1 / (x>memoryBufferStartSize) / (x <= memoryBufferStartSize + AnnealingFrames) w l lc 2 lw 2,\
      m2*x + b2 / (x>memoryBufferStartSize + AnnealingFrames) / (x <= maxFrames) w l lc 2 lw 2,\
      0.1 w l ls 0,\
      0.01 w l ls 0
+
 
 !open epsilon.png

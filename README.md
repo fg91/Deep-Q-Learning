@@ -1,4 +1,4 @@
-![](pictures/Pong.gif)
+![](pictures/Pong.gif) ![](pictures/Breakout.gif)
 
 # Deep Q-Learning
 

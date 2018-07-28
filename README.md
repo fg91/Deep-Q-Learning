@@ -1,4 +1,9 @@
+![](pictures/Pong.gif)
+
 # Deep Q-Learning
+
+You find detailed explanations on the functional and underlying priciples of DQN in the notebook DQN.ipynb.
+
 ## Requirements
 * tensorflow-gpu
 * gym

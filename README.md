@@ -1,2 +1,15 @@
-# Deep-Q-Learning
-Tensorflow implementation of Deepminds dqn with double dueling networks
+# Deep Q-Learning
+## Requirements
+* tensorflow-gpu
+* gym
+* gym[atari] (make sure it is version 0.10.5 or at least has BreakoutDeterministic-v4)
+* imageio
+* scikit-image
+
+## Try it out yourself
+
+If you want to train the network yourself, simply run the notebook DQN.ipynb.
+
+If you want to test the pretrained network, run the notebook trained.ipynb.
+
+Have fun : )

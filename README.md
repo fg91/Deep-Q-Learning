@@ -1,6 +1,6 @@
 ![](pictures/Pong.gif) ![](pictures/Breakout.gif)
 
-# Deep Q-Learning
+# Double Deep Q-Learning with Dueling Network Architecture
 
 You find detailed explanations on the functional and underlying priciples of DQN in the notebook DQN.ipynb.
 

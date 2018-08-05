@@ -1,4 +1,4 @@
-![](pictures/Pong.gif) ![](pictures/Breakout.gif)
+![](pictures/Breakout.gif)
 
 # Double Deep Q-Learning with Dueling Network Architecture
 

@@ -1,4 +1,4 @@
-![](pictures/Pong.gif) ![](pictures/Breakout_2.gif)
+![](pictures/Pong_2.gif) ![](pictures/Breakout_2.gif)
 
 # Double Deep Q-Learning with Dueling Network Architecture
 
@@ -15,8 +15,8 @@ You find detailed explanations on the functional and underlying priciples of DQN
 
 If you want to test the trained network, simply run the notebook DQN.ipynb.
 
-If you want to train the network yourself, set TRAIN = True at the top of DQN.ipynb and run the notebook.
+If you want to train the network yourself, set TRAIN = True in the first cell of DQN.ipynb and run the notebook.
 
-
+![](pictures/breakout.png) ![](pictures/pong.png)
 
 Have fun : )

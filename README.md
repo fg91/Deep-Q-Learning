@@ -2,7 +2,7 @@
 
 # Double Deep Q-Learning with Dueling Network Architecture
 
-You find detailed explanations on the functional and underlying priciples of DQN in the notebook DQN.ipynb.
+You find detailed explanations on the functional and underlying priciples of DQN in the notebook DQN.ipynb and the [corresponding blogpost](https://medium.com/@fabiograetz/tutorial-double-deep-q-learning-with-dueling-network-architectures-4c1b3fb7f756).
 
 ## Requirements
 * tensorflow-gpu

@@ -5,7 +5,7 @@
 This is fork from [fg91/Deep-Q-Learning](https://github.com/fg91/Deep-Q-Learning). I modified a little bit of the original code and trained it for Breakout. Maximum evaluation score was 804 (GIF shown above).
 
 ## Modification from the original code
-* Modify ReplayMemory to sample from all possible index
+* Modify ReplayMemory to sample from all possible index.
 * Clip rewards ("fixed all positive rewards to be 1 and all negative rewards to be -1, leaving 0 rewards unchanged") as [Mnih et al. 2013](https://arxiv.org/abs/1312.5602) and [Mnih et al. 2015](https://www.nature.com/articles/nature14236/). (This made convergence speed of training significantly faster and improved the performance of the agent in case of Breakout.)
 * Record evaluation score appropriately even if no evaluation game finished. (Unfinished evaluation game can happen when ["the agent got stuck in a loop"](https://github.com/fg91/Deep-Q-Learning/issues/1).)
 
